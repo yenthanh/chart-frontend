@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent } from './layout.component';
-import { PackageWarehouseComponent } from './package-warehouse.component';
+import { PackagesComponent } from './packages.component';
 // import { UpdateComponent } from './update.component';
 
 const routes: Routes = [
     {
         path: '', component: LayoutComponent,
         children: [
-            { path: '', component: PackageWarehouseComponent },
+            { path: '', component: PackagesComponent },
             // { path: 'update', component: UpdateComponent }
         ]
     }
@@ -19,4 +19,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class PackageWarehouseRoutingModule { }
+export class PackagesRoutingModule { }

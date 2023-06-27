@@ -2,8 +2,8 @@
 import * as Highcharts from 'highcharts';
 import { AccountService } from '@app/_services';
 
-@Component({ templateUrl: 'package-warehouse.component.html' })
-export class PackageWarehouseComponent {
+@Component({ templateUrl: 'packages.component.html' })
+export class PackagesComponent {
     account = this.accountService.accountValue;
     Highcharts: typeof Highcharts = Highcharts; // required
     chartConstructor: string = 'chart'; // optional string, defaults to 'chart'
