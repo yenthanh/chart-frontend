@@ -2,21 +2,20 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { ProfileRoutingModule } from './profile-routing.module';
+import { PackageWarehouseRoutingModule } from './package-warehouse-routing.module';
 import { LayoutComponent } from './layout.component';
 import { PackageWarehouseComponent } from './package-warehouse.component';
-import { UpdateComponent } from './update.component';
-
+import { HighchartsChartModule } from 'highcharts-angular';
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        ProfileRoutingModule
+        PackageWarehouseRoutingModule,
+        HighchartsChartModule
     ],
     declarations: [
         LayoutComponent,
         PackageWarehouseComponent,
-        UpdateComponent
     ]
 })
 export class PackageWarehouseModule { }

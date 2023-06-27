@@ -1,3 +1,8 @@
+@import 'tailwindcss/base';
+// tailwindcss/components must be imported before tailwindcss/utilities
+@import 'tailwindcss/components';
+// tailwindcss/utilities must be imported after tailwindcss/components
+@import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
 .app-container {
     min-height: 320px;
