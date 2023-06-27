@@ -5,13 +5,14 @@ import { CommonModule } from '@angular/common';
 import { PackagesRoutingModule } from './packages-routing.module';
 import { LayoutComponent } from './layout.component';
 import { PackagesComponent } from './packages.component';
-import { HighchartsChartModule } from 'highcharts-angular';
+// import { HighchartsChartModule } from 'highcharts-angular';
+import { ChartModule } from 'angular-highcharts';
 @NgModule({
     imports: [
         CommonModule,
         ReactiveFormsModule,
         PackagesRoutingModule,
-        HighchartsChartModule
+        ChartModule
     ],
     declarations: [
         LayoutComponent,
