@@ -12,32 +12,32 @@
               />
             </div>
             <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
+              <div class="ml-10 flex items-baseline space-x-4 menu">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a
                   routerLink="/user"
-                  routerLinkActive="active"
+                  routerLinkActive="bg-gray-900 text-white"
                   [routerLinkActiveOptions]="{ exact: true }"
-                  aria-current="page"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Users</a
                 >
 
                 <a
                   routerLink="/packages"
+                  routerLinkActive="bg-gray-900 text-white"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Packages</a
                 >
                 <a
                   routerLink="/warehouses"
-                  routerLinkActive="active"
+                  routerLinkActive="bg-gray-900 text-white"
                   [routerLinkActiveOptions]="{ exact: true }"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Warehouses</a
                 >
                 <a
                   routerLink="/payments"
-                  routerLinkActive="active"
+                  routerLinkActive="bg-gray-900 text-white"
                   [routerLinkActiveOptions]="{ exact: true }"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Payments</a
@@ -168,35 +168,35 @@
           >
           <a
             routerLink="/packages"
-            routerLinkActive="active"
+            routerLinkActive="bg-gray-900 text-white"
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-item nav-link"
             >Packages</a
           >
           <a
             routerLink="/warehouses"
-            routerLinkActive="active"
+            routerLinkActive="bg-gray-900 text-white"
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-item nav-link"
             >Warehouses</a
           >
           <a
             routerLink="/payments"
-            routerLinkActive="active"
+            routerLinkActive="bg-gray-900 text-white"
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-item nav-link"
             >Payments</a
           >
           <!-- <a
             routerLink="/profile"
-            routerLinkActive="active"
+            routerLinkActive="bg-gray-900 text-white"
             class="nav-item nav-link"
             >Profile</a
           > -->
           <!-- <a
             *ngIf="account.role === Role.Admin"
             routerLink="/admin"
-            routerLinkActive="active"
+            routerLinkActive="bg-gray-900 text-white"
             class="nav-item nav-link"
             >Admin</a
           > -->
