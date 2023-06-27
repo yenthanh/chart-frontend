@@ -15,7 +15,9 @@
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a
-                  routerLink="/"
+                  routerLink="/user"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
                   aria-current="page"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Users</a
@@ -27,12 +29,16 @@
                   >Packages</a
                 >
                 <a
-                  routerLink="/"
+                  routerLink="/warehouses"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Warehouses</a
                 >
                 <a
-                  routerLink="/"
+                  routerLink="/payments"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Payments</a
                 >
@@ -77,8 +83,8 @@
                   aria-labelledby="user-menu-button"
                   tabindex="-1"
                 > -->
-                  <!-- Active: "bg-gray-100", Not Active: "" -->
-                  <!-- <a
+                <!-- Active: "bg-gray-100", Not Active: "" -->
+                <!-- <a
                     href="#"
                     class="block px-4 py-2 text-sm text-gray-700"
                     role="menuitem"
@@ -168,35 +174,35 @@
             >Packages</a
           >
           <a
-            routerLink="/packages"
+            routerLink="/warehouses"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-item nav-link"
             >Warehouses</a
           >
           <a
-            routerLink="/packages"
+            routerLink="/payments"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-item nav-link"
             >Payments</a
           >
-          <a
+          <!-- <a
             routerLink="/profile"
             routerLinkActive="active"
             class="nav-item nav-link"
             >Profile</a
-          >
-          <a
+          > -->
+          <!-- <a
             *ngIf="account.role === Role.Admin"
             routerLink="/admin"
             routerLinkActive="active"
             class="nav-item nav-link"
             >Admin</a
-          >
-          <button (click)="logout()" class="btn btn-link nav-item nav-link">
+          > -->
+          <!-- <button (click)="logout()" class="btn btn-link nav-item nav-link">
             Logout
-          </button>
+          </button> -->
         </div>
         <div class="border-t border-gray-700 pb-3 pt-4">
           <div class="flex items-center px-5">
